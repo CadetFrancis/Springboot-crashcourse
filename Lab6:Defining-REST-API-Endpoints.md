@@ -5,6 +5,26 @@ In this lab, you will design and document the REST API endpoints for the Zoo Sim
 By completing this lab, you’ll have a clear and well-structured API specification that can guide your controller and service implementation.
 
 ***
+## API Resources
+
+| Resource       | Description |
+|----------------|-------------|
+| `visitors`     | Represents zoo visitors who can buy tickets, visit shops, enclosures, and hospitals. |
+| `tickets`      | Represents admission tickets that can be generated, validated, retrieved, or deleted. |
+| `zoo`          | Represents the zoo entity, used for entering, exiting, opening, and closing the zoo. |
+| `shops`        | Represents shops inside the zoo that can be visited by visitors and assigned to vendors. |
+| `products`     | Represents products sold in shops (e.g., plushies) that can be filtered, purchased, or deleted. |
+| `enclosures`   | Represents animal enclosures that can be visited and interacted with (e.g., feed/exercise animals). |
+| `animals`      | Represents zoo animals, which can be moved, healed, exercised, examined, or deleted. |
+| `hospitals`    | Represents animal hospitals in the zoo where animals can be healed or examined. |
+| `lectures`     | Represents science lectures hosted in hospitals by veterinarians or attended by visitors. |
+| `vendors`      | Represents shop vendors who sell products and can be assigned to shops by managers. |
+| `handlers`     | Represents zoo handlers responsible for feeding, exercising, or examining animals. |
+| `veterinarians`| Represents vets responsible for healing animals, giving lectures, or viewing hospital tasks. |
+| `managers`     | Represents zoo managers who manage staff assignments and zoo state (open/close). |
+| `tasks`        | Represents available tasks for handlers or veterinarians. |
+
+
 ## API Endpoints:
 ### Visitors
 | HTTP Verb | Resource URL | Use Case Representation |
