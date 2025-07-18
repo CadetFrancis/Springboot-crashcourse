@@ -1,16 +1,14 @@
 ### Project Title:
-Challenge Lab 3: Returning Dynamic JSON Responses (Maps & Lists)
+Lab 10: Create POST Product Endpoint
 ***
 ### Goal:
-Understand how Spring Boot automatically converts common Java data structures like Map and List into JSON responses when using @RestController.***
-### Key Spring Boot Concepts Introduced:
-* Automatic JSON serialization via Jackson (part of spring-boot-starter-web).
-* Returning java.util.Map for dynamic JSON objects.
-* Returning java.util.List for JSON arrays.
-* Understanding @ResponseBody implicitly from @RestController.
+Implement the ability to create new Product resources by handling incoming JSON data and saving it to your in-memory repository. This will introduce the crucial @RequestBody annotation.
 
-### Output:
-![image info](./media/code1.png)
-![image info](./media/output1.png)
-![image info](./media/output2.png)
-![image info](./media/submission.png)
+
+### ProductController:
+![image info](./media/code.png)
+### Postman POST Request:
+![image info](./media/POST-request.png)
+### Postman GET Request:
+![image info](./media/GET-request.png)
+

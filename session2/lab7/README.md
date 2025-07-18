@@ -1,16 +1,12 @@
 ### Project Title:
-Challenge Lab 3: Returning Dynamic JSON Responses (Maps & Lists)
+Lab 7: Implement an In-Memory Data Store (ProductRepository)
 ***
 ### Goal:
-Understand how Spring Boot automatically converts common Java data structures like Map and List into JSON responses when using @RestController.***
-### Key Spring Boot Concepts Introduced:
-* Automatic JSON serialization via Jackson (part of spring-boot-starter-web).
-* Returning java.util.Map for dynamic JSON objects.
-* Returning java.util.List for JSON arrays.
-* Understanding @ResponseBody implicitly from @RestController.
+Create a simple Java class that simulates a database by storing Product objects in an ArrayList. This in-memory repository will handle basic CRUD-like operations for our API without needing a real database yet.
 
-### Output:
-![image info](./media/code1.png)
-![image info](./media/output1.png)
-![image info](./media/output2.png)
-![image info](./media/submission.png)
+
+### ProductRepositoryTest:
+![image info](./media/code.png)
+### Output Test Coverage:
+![image info](./media/test-coverage.png)
+
