@@ -39,11 +39,12 @@ class ProductTest {
 
     @Test
     void validReturnString(){
-        String expected = "Product{id=1, name=carbonara, price=100}";
+        String expected = "Product{id=1, name='carbonara', price=100.0}";
+        assertEquals(expected,product.toString());
     }
     @Test
     void validEquals(){
-        assertEquals(product,product);
+        assertTrue(product.equals(product));
     }
     @Test
     void validHashedObjects(){
@@ -51,7 +52,7 @@ class ProductTest {
         Object product2 = new Product(1L,"carbonara", 100d);
         String hashed1= String.valueOf(product1.hashCode());
         String hashed2= String.valueOf(product2.hashCode());
-        assertTrue(Objects.equals(hashed1, hashed2));
+        assertEquals(hashed1, hashed2);
     }
 
 }
