@@ -58,7 +58,10 @@ class ProductRepositoryTest {
 
     @Test
     void shouldThrowException(){
-        Product newProduct = new Product(50L,"Laptop",10);
-        assertEquals(newProduct,productRepository.save(newProduct));
+        Product newProduct = new Product(100L,"Fake Product",1);
+        IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () -> {
+            productRepository.save(newProduct);
+        });
+        assertEquals("Product not found for update",ex.getMessage());
     }
 }

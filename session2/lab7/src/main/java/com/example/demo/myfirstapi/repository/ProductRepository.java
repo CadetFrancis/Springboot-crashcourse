@@ -68,8 +68,9 @@ public class ProductRepository {
             }
             // If ID was provided but not found, you might want to throw an exception
             // For this lab, we'll just return the product, but it wasn't added/updated
-            System.out.println("Product with ID " + product.getId() + " not found for update.");
-            return product; // Or throw new IllegalArgumentException("Product not found for update");
+            //System.out.println("Product with ID " + product.getId() + " not found for update.");
+            //return product; Or
+            throw new IllegalArgumentException("Product not found for update");
         }
     }
 
