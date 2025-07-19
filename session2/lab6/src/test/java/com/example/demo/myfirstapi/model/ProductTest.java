@@ -16,6 +16,7 @@ class ProductTest {
 
     @BeforeEach
     void setup() {
+        product = new Product("milk", 100d);
         product = new Product(1L,"carbonara", 100d);
         System.setOut(new PrintStream(outContent));
     }
@@ -43,8 +44,10 @@ class ProductTest {
         assertEquals(expected,product.toString());
     }
     @Test
-    void validEquals(){
-        assertTrue(product.equals(product));
+    void validEqualityOfTwoObjects() {
+        Product p1 = new Product(1L, "carbonara", 100d);
+        Product p2 = new Product(1L, "carbonara", 100d);
+        assertEquals(p1, p2);
     }
     @Test
     void validHashedObjects(){
